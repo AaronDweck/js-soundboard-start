@@ -1,0 +1,37 @@
+body {
+    --button-width: 125px;
+    --button-margin: 2px;
+    --button-grid: calc((var(--button-width) + var(--button-margin) * 2) * 4);
+    --punk-red: rgb(216, 80, 57);
+
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+#button-grid {
+    width: var(--button-grid);
+    height: var(--button-grid);
+    background-color: var(--punk-red);
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.button {
+    width: var(--button-width);
+    height: var(--button-width);
+    color: var(--punk-red);
+    font-size: large;
+    margin: var(--button-margin);
+}
+
+.button:hover {
+    background-image: url('/images/head.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
